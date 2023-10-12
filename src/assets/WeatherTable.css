@@ -1,0 +1,38 @@
+/* WeatherTable.css */
+
+body {
+  font-family: sans-serif;
+}
+
+.weather-table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 0.5rem;
+}
+
+tr:nth-child(even) {
+  background-color: #eee;
+}
+
+/* Media queries */
+
+@media (min-width: 768px) {
+  .weather-table {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  table {
+    width: 50%;
+  }
+}
